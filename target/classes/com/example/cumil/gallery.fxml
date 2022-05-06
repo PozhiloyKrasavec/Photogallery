@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cumil.GalleryController">
+   <bottom>
+      <MenuBar BorderPane.alignment="CENTER" fx:id="menuBar">
+        <menus>
+          <Menu mnemonicParsing="false" text="Предыдущая">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Назад" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Фильтры">
+            <items>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Следующая">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Выбрать..." />
+              <MenuItem mnemonicParsing="false" text="Вперед" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Сохранить">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Сохранить" />
+                    <MenuItem mnemonicParsing="false" text="Сохранить как" />
+                    <MenuItem mnemonicParsing="false" text="Печать" />
+                </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </bottom>
+   <center>
+      <ImageView fx:id="imageView" fitHeight="512.0" fitWidth="658.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

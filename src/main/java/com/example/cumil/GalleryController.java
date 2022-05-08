@@ -148,7 +148,7 @@ public class GalleryController implements Initializable {
                     stageNew.show();
                 });
             }
-            if(item.getText().equals("Печать"));{
+            if(item.getText().equals("Печать")){
                 item.setOnAction(event -> {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("print.fxml"));
                     Parent root = null;
